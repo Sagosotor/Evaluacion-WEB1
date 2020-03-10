@@ -29,8 +29,39 @@ if($imc<= 18.4){
 }else if($imc>=18.5 && $imc<=24.9){
     echo("El usuario tiene peso normal <br> ");
 }else if($imc>=25 && $imc<=29.9){
-    
+    echo("El usuario tiene sobrepeso <br>");
+}else if ($imc>=30 && $imc<=34.9){
+    echo("El usuario tiene obesidad grado 1 <br>");
+}else if ($imc>=35 && $imc<=39.9){
+    echo("El usuario tiene obesidad grado 2 <br>");
+}else{
+    echo("El usuario tiene obesidad grado 3 <br>");
 }
+
+echo ("<br>..........................");
+
+echo("<br><br> Ejercicio 3 <br><br>");
+echo("Promocion Descuentos <br>");
+
+$Cantzapatosvendidos=5;
+$Precioparzapatos=150000;
+
+if($Cantzapatosvendidos== 3){
+    $descuento=$Precioparzapatos*0.1;
+    $valor=$Precioparzapatos-$descuento;
+    echo("El valor a pagar es: $ ".$valor. "El descuento fue del 10% de: ".$descuento." <br>");
+}else if ($Cantzapatosvendidos> 3 && $Cantzapatosvendidos<= 5){
+    $descuento=$Precioparzapatos*0.2;
+    $valor=$Precioparzapatos-$descuento;
+    echo("El valor a pagar es: $".$valor. "El descuento fue del 20% de: ".$descuento."<br>");
+}else if($Cantzapatosvendidos>5 ){
+    $descuento=$Precioparzapatos*0.4;
+    $valor=$Precioparzapatos-$descuento;
+    echo("El valor a pagar es : $".$valor. "El descuento fue del 40% de: ".$descuento."<br>");
+}else{
+    echo("El valor a pagar es: $" .$Precioparzapatos." <br>");
+}  
+
 
 
 
